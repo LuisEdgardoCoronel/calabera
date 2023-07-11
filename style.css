@@ -209,7 +209,7 @@ button:hover{
         }
 
     }
-    dialog{
+   #winner{
         #container-winner{
             #title-winner{
                 font-size: 9rem;
@@ -235,7 +235,7 @@ button:hover{
             font-size: 24px;
         }
     }
-    dialog{
+    #winner{
         #container-winner{
             #title-winner{
                 font-size: 5rem;
