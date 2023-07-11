@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego de calaberas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="game-container">
+        <canvas id="game"></canvas>
+
+        <div id="container">
+            <div class="btn-container">
+                <button id="up"></button>
+                <div>
+                    <button id="left"></button>
+                    <button id="right"></button>
+                </div>
+                <button id="down"></button>
+            </div>
+    
+            <div class="messages">
+                <p>Vidas: <span id="lives"></span></p>
+                <p>Tiempo:⏳ <span id="time"></span></p>
+                <p>Record: <span id="record"></span></p>
+            </div>
+        </div>
+        
+        <div id="winner" class="disenabled" >
+            <div id="container-winner">
+                <h2 id="title-winner">Winner 🏆</h2>
+                <h2 id="result"></h2>
+                <button id="reiniciarWinner" class="reiniciar" type="button">Reiniciar</button>
+                <button id="returnWinner" class="returnHome"  type="button">Ir al inicio</button>
+            </div>
+        </div>
+
+        <div id="game-over" class="disenabled">
+            <div id="container-game-over">
+                <h2 id="title-game-over">Game Over 💀</h2>
+                <h3 id="subtitle-game-over"> Eres capaz de volver a intentarlo?</h3>
+                <button id="reiniciarGameOver" class="reiniciar" type="button">Si</button>
+                <button id="returnGameOver"  class="returnHome" type="button">No</button>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="maps.js"></script>
+    <script src="game.js"></script>
+</body>
+</html>
